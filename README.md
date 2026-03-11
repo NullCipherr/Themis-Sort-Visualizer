@@ -74,15 +74,6 @@ npm run preview
 
 Build output is generated in the `dist/` folder.
 
-### SPA Routing
-
-This project includes `public/_redirects`:
-
-```text
-/* /index.html 200
-```
-
-This ensures client-side routes work correctly on Cloudflare Pages.
 
 ## Notes
 
