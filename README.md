@@ -74,28 +74,6 @@ npm run preview
 
 Build output is generated in the `dist/` folder.
 
-## Deploy to GitHub
-
-```bash
-git add .
-git commit -m "docs: add complete english README"
-git branch -M main
-git remote add origin <YOUR_REPOSITORY_URL>
-git push -u origin main
-```
-
-## Deploy to Cloudflare Pages
-
-1. Open Cloudflare Dashboard.
-2. Go to `Workers & Pages` -> `Create` -> `Pages` -> `Connect to Git`.
-3. Select your GitHub repository.
-4. Use these settings:
-   - Framework preset: `Vite`
-   - Build command: `npm run build`
-   - Build output directory: `dist`
-   - Node.js version: `20` or newer
-5. Click `Save and Deploy`.
-
 ### SPA Routing
 
 This project includes `public/_redirects`:
