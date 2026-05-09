@@ -23,6 +23,7 @@ Project documentation is organized in `docs/`.
 - [Deployment](docs/en/DEPLOYMENT.md)
 - [Testing](docs/en/TESTING.md)
 - [Roadmap](docs/en/ROADMAP.md)
+- [Changelog](CHANGELOG.md)
 
 ---
 
@@ -137,6 +138,25 @@ Build artifacts are generated in `dist/`.
 - `npm run dev`: start local development server.
 - `npm run build`: create production bundle.
 - `npm run preview`: preview production build locally.
+
+---
+
+## CI/CD e Deploy Automático (GitHub Pages)
+
+O projeto está configurado com dois workflows:
+
+- **CI** (`.github/workflows/ci.yml`): roda `npm ci` e `npm run build` em `push` e `pull_request` na branch `main`.
+- **CD** (`.github/workflows/deploy.yml`): faz build e publica automaticamente no **GitHub Pages** a cada `push` na `main`.
+
+### Ativação no GitHub
+
+1. Acesse `Settings` do repositório.
+2. Vá em `Pages`.
+3. Em `Build and deployment`, selecione `Source: GitHub Actions`.
+4. Faça merge/push na `main` para disparar o primeiro deploy.
+
+Após a publicação, a URL ficará no formato:
+`https://<owner>.github.io/Themis-Sort-Visualizer/`
 
 ---
 

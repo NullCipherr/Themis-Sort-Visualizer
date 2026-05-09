@@ -17,6 +17,7 @@ This folder centralizes technical documentation for **Themis Sort Visualizer**.
 
 ## Governance
 
+- [Changelog](../CHANGELOG.md)
 - [Contributing Guide](../CONTRIBUTING.md)
 - [Code of Conduct](../CODE_OF_CONDUCT.md)
 - [Security Policy](../SECURITY.md)
