@@ -141,21 +141,21 @@ Build artifacts are generated in `dist/`.
 
 ---
 
-## CI/CD e Deploy Automático (GitHub Pages)
+## CI/CD and Automatic Deployment (GitHub Pages)
 
-O projeto está configurado com dois workflows:
+The project is configured with two workflows:
 
-- **CI** (`.github/workflows/ci.yml`): roda `npm ci` e `npm run build` em `push` e `pull_request` na branch `main`.
-- **CD** (`.github/workflows/deploy.yml`): faz build e publica automaticamente no **GitHub Pages** a cada `push` na `main`.
+- **CI** (`.github/workflows/ci.yml`): runs `npm ci` and `npm run build` on `push` and `pull_request` targeting `main`.
+- **CD** (`.github/workflows/deploy.yml`): builds and automatically deploys to **GitHub Pages** on every `push` to `main`.
 
-### Ativação no GitHub
+### GitHub Setup
 
-1. Acesse `Settings` do repositório.
-2. Vá em `Pages`.
-3. Em `Build and deployment`, selecione `Source: GitHub Actions`.
-4. Faça merge/push na `main` para disparar o primeiro deploy.
+1. Open repository `Settings`.
+2. Go to `Pages`.
+3. In `Build and deployment`, select `Source: GitHub Actions`.
+4. Merge/push to `main` to trigger the first deployment.
 
-Após a publicação, a URL ficará no formato:
+After publishing, the URL will follow this format:
 `https://<owner>.github.io/Themis-Sort-Visualizer/`
 
 ---
